@@ -1,36 +1,81 @@
-const { FrontEndTopic } = require('../models/topicModel');
+const { BackEndTopic } = require('../models/topicModel');
 
-module.exports.getAllTopics = (req, res) => {
-  const topics = {};
-  res.status(200).json({
-    status: 'success',
-    data: {
-      topics,
-    },
-  });
+module.exports.getAllTopics = async (req, res) => {
+  try {
+    const topics = await BackEndTopic.find();
+    res.status(200).json({
+      status: 'success',
+      data: {
+        topics,
+      },
+    });
+  } catch (error) {
+    res.status(400).json({
+      status: 'error',
+      data: {
+        message: error.message,
+      },
+    });
+  }
 };
 
 module.exports.createTopic = async (req, res) => {
-  const topic = await FrontEndTopic.create(req.body);
-  res.status(201).json({
-    status: 'success',
-    data: {
-      topic,
-    },
-  });
+  try {
+    const topic = await BackEndTopic.create(req.body);
+    res.status(201).json({
+      status: 'success',
+      data: {
+        topic,
+      },
+    });
+  } catch (error) {
+    res.status(400).json({
+      status: 'error',
+      data: {
+        message: error.message,
+      },
+    });
+  }
 };
 
-module.exports.updateTopic = (req, res) => {
-  const data = req.body;
-  res.status(200).json({
-    status: 'success',
-    data: data,
-  });
+module.exports.updateTopic = async (req, res) => {
+  try {
+    const topic = await BackEndTopic.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      {
+        new: true,
+        runValidators: true,
+      }
+    );
+
+    res.status(200).json({
+      status: 'success',
+      data: topic,
+    });
+  } catch (error) {
+    res.status(404).json({
+      status: 'error',
+      data: {
+        message: error.message,
+      },
+    });
+  }
 };
 
-module.exports.deleteTopic = (req, res) => {
-  res.status(204).json({
-    status: 'success',
-    data: null,
-  });
+module.exports.deleteTopic = async (req, res) => {
+  try {
+    await BackEndTopic.findByIdAndDelete(req.params.id);
+    res.status(204).json({
+      status: 'success',
+      data: null,
+    });
+  } catch (error) {
+    res.status(404).json({
+      status: 'error',
+      data: {
+        message: error.message,
+      },
+    });
+  }
 };
