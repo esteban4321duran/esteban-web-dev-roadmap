@@ -13,7 +13,7 @@ const subtopicSchema = new mongoose.Schema({
   },
   type: {
     type: String,
-    required: [true, 'Subtopics must have a type\n'],
+    default: 'recommended',
     trim: true,
   },
 });

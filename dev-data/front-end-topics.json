@@ -1,0 +1,10 @@
+[
+  {
+    "name": "CSS",
+    "order": 2,
+    "subtopics": [
+      { "content": "Learn the basics" },
+      { "content": "Responsive design and Media Queries" }
+    ]
+  }
+]
