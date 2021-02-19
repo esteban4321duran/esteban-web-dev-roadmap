@@ -1,10 +1,1 @@
-[
-  {
-    "name": "CSS",
-    "order": 2,
-    "subtopics": [
-      { "content": "Learn the basics" },
-      { "content": "Responsive design and Media Queries" }
-    ]
-  }
-]
+[{"name":"Internet","order":0,"subtopics":[{"content":"How does the internet work","type":"recommended"},{"content":"What is HTTP?","type":"recommended"},{"content":"Browsers and how they work?","type":"recommended"},{"content":"DNS and how it works?","type":"recommended"},{"content":"What is Domain Name?","type":"recommended"},{"content":"What is hosting?","type":"recommended"}]},{"name":"HTML","order":0,"subtopics":[{"content":"Learn the basics","type":"recommended"},{"content":"Writing Semantic HTML","type":"order-independent"},{"content":"Forms and validations","type":"recommended"},{"content":"Conventions and Best Practices","type":"recommended"},{"content":"Accessibility","type":"order-independent"},{"content":"SEO Basics","type":"order-independent"}]}]
