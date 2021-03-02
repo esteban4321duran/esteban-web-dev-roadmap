@@ -1,1 +1,81 @@
-[{"name":"Internet","order":0,"subtopics":[{"content":"How does the internet work","type":"recommended"},{"content":"What is HTTP?","type":"recommended"},{"content":"Browsers and how they work?","type":"recommended"},{"content":"DNS and how it works?","type":"recommended"},{"content":"What is Domain Name?","type":"recommended"},{"content":"What is hosting?","type":"recommended"}]},{"name":"HTML","order":1,"subtopics":[{"content":"Learn the basics","type":"recommended"},{"content":"Writing Semantic HTML","type":"order-independent"},{"content":"Forms and validations","type":"recommended"},{"content":"Conventions and Best Practices","type":"recommended"},{"content":"Accessibility","type":"order-independent"},{"content":"SEO Basics","type":"order-independent"}]},{"name":"CSS","order":2,"subtopics":[{"content":"Learn the basics","type":"recommended"},{"content":"Responsive design and Media Queries","type":"recommended"}]},{"name":"CSS Layouts","order":3,"subtopics":[{"content":"floats","type":"recommended"},{"content":"positioning","type":"recommended"},{"content":"display","type":"recommended"},{"content":"Box model","type":"recommended"},{"content":"","type":"recommended"},{"content":"CSS grid","type":"recommended"},{"content":"Flex Box","type":"recommended"},{"content":"","type":"recommended"}]},{"name":"Javascript","order":4,"subtopics":[{"content":"Syntax and Basic Constructs","type":"recommended"},{"content":"Learn DOM manipulation","type":"recommended"},{"content":"Learn Fetch API / Ajax (XHR)","type":"recommended"},{"content":"ES6+ and modular Javascript","type":"recommended"},{"content":"Understand the concepts Hoisting, Event Bubbling, Scope, Prototype, Shadow DOM, strict","type":"recommended"}]},{"name":"Version Control Systems","order":5,"subtopics":[{"content":"What they are and why you should use one","type":"recommended"},{"content":"Basic usage of Git","type":"recommended"}]},{"name":"Repo hosting services","order":6,"subtopics":[{"content":"GitHub","type":"recommended"}]}]
+[
+  {
+    "name": "Internet",
+    "order": 0,
+    "subtopics": [
+      { "content": "How does the internet work", "type": "recommended" },
+      { "content": "What is HTTP?", "type": "recommended" },
+      { "content": "Browsers and how they work?", "type": "recommended" },
+      { "content": "DNS and how it works?", "type": "recommended" },
+      { "content": "What is Domain Name?", "type": "recommended" },
+      { "content": "What is hosting?", "type": "recommended" }
+    ]
+  },
+  {
+    "name": "HTML",
+    "order": 1,
+    "subtopics": [
+      { "content": "Learn the basics", "type": "recommended" },
+      { "content": "Writing Semantic HTML", "type": "order-independent" },
+      { "content": "Forms and validations", "type": "recommended" },
+      { "content": "Conventions and Best Practices", "type": "recommended" },
+      { "content": "Accessibility", "type": "order-independent" },
+      { "content": "SEO Basics", "type": "order-independent" }
+    ]
+  },
+  {
+    "name": "CSS",
+    "order": 2,
+    "subtopics": [
+      { "content": "Learn the basics", "type": "recommended" },
+      {
+        "content": "Responsive design and Media Queries",
+        "type": "recommended"
+      }
+    ]
+  },
+  {
+    "name": "CSS Layouts",
+    "order": 3,
+    "subtopics": [
+      { "content": "floats", "type": "recommended" },
+      { "content": "positioning", "type": "recommended" },
+      { "content": "display", "type": "recommended" },
+      { "content": "Box model", "type": "recommended" },
+      { "content": "", "type": "recommended" },
+      { "content": "CSS grid", "type": "recommended" },
+      { "content": "Flex Box", "type": "recommended" },
+      { "content": "", "type": "recommended" }
+    ]
+  },
+  {
+    "name": "Javascript",
+    "order": 4,
+    "subtopics": [
+      { "content": "Syntax and Basic Constructs", "type": "recommended" },
+      { "content": "Learn DOM manipulation", "type": "recommended" },
+      { "content": "Learn Fetch API / Ajax (XHR)", "type": "recommended" },
+      { "content": "ES6+ and modular Javascript", "type": "recommended" },
+      {
+        "content": "Understand the concepts Hoisting, Event Bubbling, Scope, Prototype, Shadow DOM, strict",
+        "type": "recommended"
+      }
+    ]
+  },
+  {
+    "name": "Version Control Systems",
+    "order": 5,
+    "subtopics": [
+      {
+        "content": "What they are and why you should use one",
+        "type": "recommended"
+      },
+      { "content": "Basic usage of Git", "type": "recommended" }
+    ]
+  },
+  {
+    "name": "Repo hosting services",
+    "order": 6,
+    "subtopics": [{ "content": "GitHub", "type": "recommended" }]
+  }
+]
