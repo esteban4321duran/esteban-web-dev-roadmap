@@ -1,1 +1,214 @@
-[{"name":"Learn a Programming language","order":0,"subtopics":[{"content":"Go","type":"recommended"},{"content":"Python","type":"alternative"},{"content":"Ruby","type":"alternative"},{"content":"Node.js","type":"alternative"},{"content":"Rust","type":"alternative"},{"content":"C","type":"alternative"},{"content":"C++","type":"alternative"}]},{"name":"Understand different OS concepts","order":1,"subtopics":[{"content":"Process Management","type":"recommended"},{"content":"Threads and concurrency","type":"recommended"},{"content":"Sockets","type":"recommended"},{"content":"POSIX Basics","type":"recommended"},{"content":"Networking concepts","type":"recommended"},{"content":"I/O Management","type":"recommended"},{"content":"Virtualization","type":"recommended"},{"content":"Memory/Storage","type":"recommended"},{"content":"File Systems","type":"recommended"},{"content":"Service Management (systemd)","type":"recommended"}]},{"name":"Managing servers: Operating Systems","order":2,"subtopics":[{"content":"Linux","type":"recommended"},{"content":"Unix","type":"alternative"},{"content":"Windows","type":"alternative"}]},{"name":"Managing servers: Learn to live in terminal","order":3,"subtopics":[{"content":"screen","type":"recommended"},{"content":"tmux","type":"recommended"},{"content":"Bash scripting","type":"recommended"},{"content":"Vim/Nano/PowerShell/Emoos","type":"recommended"},{"content":"Compiling apps from source","type":"order-independent"},{"content":"System performance","type":"recommended"},{"content":"Text Manipulation tools","type":"recommended"},{"content":"Process monitoring","type":"recommended"},{"content":"Network","type":"recommended"},{"content":"strace","type":"recommended"},{"content":"dtrace","type":"recommended"},{"content":"systemtap","type":"recommended"},{"content":"uname","type":"recommended"},{"content":"df","type":"recommended"},{"content":"history","type":"recommended"}]},{"name":"Networking, Security and Protocols","order":4,"subtopics":[{"content":"DNS","type":"recommended"},{"content":"OSI Model","type":"recommended"},{"content":"HTTP","type":"recommended"},{"content":"HTTPS","type":"recommended"},{"content":"FTP","type":"recommended"},{"content":"SSL/TLS","type":"recommended"},{"content":"SSH","type":"recommended"},{"content":"Port Forwarding","type":"recommended"}]},{"name":"Emails","order":5,"subtopics":[{"content":"SMTP","type":"order-independent"},{"content":"IMAPS","type":"order-independent"},{"content":"POP38","type":"order-independent"},{"content":"White/Gray Listing","type":"order-independent"}]}]
+[
+  {
+    "name": "Learn a Programming language",
+    "order": 0,
+    "subtopics": [
+      { "content": "Go", "type": "recommended" },
+      { "content": "Python", "type": "alternative" },
+      { "content": "Ruby", "type": "alternative" },
+      { "content": "Node.js", "type": "alternative" },
+      { "content": "Rust", "type": "alternative" },
+      { "content": "C", "type": "alternative" },
+      { "content": "C++", "type": "alternative" }
+    ]
+  },
+  {
+    "name": "Understand different OS concepts",
+    "order": 1,
+    "subtopics": [
+      { "content": "Process Management", "type": "recommended" },
+      { "content": "Threads and concurrency", "type": "recommended" },
+      { "content": "Sockets", "type": "recommended" },
+      { "content": "POSIX Basics", "type": "recommended" },
+      { "content": "Networking concepts", "type": "recommended" },
+      { "content": "I/O Management", "type": "recommended" },
+      { "content": "Virtualization", "type": "recommended" },
+      { "content": "Memory/Storage", "type": "recommended" },
+      { "content": "File Systems", "type": "recommended" },
+      { "content": "Service Management (systemd)", "type": "recommended" }
+    ]
+  },
+  {
+    "name": "Managing servers: Operating Systems",
+    "order": 2,
+    "subtopics": [
+      { "content": "Linux", "type": "recommended" },
+      { "content": "Unix", "type": "alternative" },
+      { "content": "Windows", "type": "alternative" }
+    ]
+  },
+  {
+    "name": "Managing servers: Learn to live in terminal",
+    "order": 3,
+    "subtopics": [
+      { "content": "screen", "type": "recommended" },
+      { "content": "tmux", "type": "recommended" },
+      { "content": "Bash scripting", "type": "recommended" },
+      { "content": "Vim/Nano/PowerShell/Emoos", "type": "recommended" },
+      { "content": "Compiling apps from source", "type": "order-independent" },
+      { "content": "System performance", "type": "recommended" },
+      { "content": "Text Manipulation tools", "type": "recommended" },
+      { "content": "Process monitoring", "type": "recommended" },
+      { "content": "Network", "type": "recommended" },
+      { "content": "strace", "type": "recommended" },
+      { "content": "dtrace", "type": "recommended" },
+      { "content": "systemtap", "type": "recommended" },
+      { "content": "uname", "type": "recommended" },
+      { "content": "df", "type": "recommended" },
+      { "content": "history", "type": "recommended" }
+    ]
+  },
+  {
+    "name": "Networking, Security and Protocols",
+    "order": 4,
+    "subtopics": [
+      { "content": "DNS", "type": "recommended" },
+      { "content": "OSI Model", "type": "recommended" },
+      { "content": "HTTP", "type": "recommended" },
+      { "content": "HTTPS", "type": "recommended" },
+      { "content": "FTP", "type": "recommended" },
+      { "content": "SSL/TLS", "type": "recommended" },
+      { "content": "SSH", "type": "recommended" },
+      { "content": "Port Forwarding", "type": "recommended" }
+    ]
+  },
+  {
+    "name": "Emails",
+    "order": 5,
+    "subtopics": [
+      { "content": "SMTP", "type": "order-independent" },
+      { "content": "IMAPS", "type": "order-independent" },
+      { "content": "POP38", "type": "order-independent" },
+      { "content": "White/Gray Listing", "type": "order-independent" }
+    ]
+  },
+  {
+    "name": "What is and how to setup a ...",
+    "order": 6,
+    "subtopics": [
+      { "content": "Reverse Proxy", "type": "recommended" },
+      { "content": "Forward Proxt", "type": "recommended" },
+      { "content": "Caching Server", "type": "recommended" },
+      { "content": "Load Balancer", "type": "recommended" },
+      { "content": "Firewall", "type": "recommended" }
+    ]
+  },
+  {
+    "name": "What is and how to setup a Web Server with ...",
+    "order": 7,
+    "subtopics": [
+      { "content": "Nginx", "type": "recommended" },
+      { "content": "IIS", "type": "alternative" },
+      { "content": "Apache", "type": "alternative" },
+      { "content": "Tomcat", "type": "alternative" },
+      { "content": "Caddy", "type": "alternative" }
+    ]
+  },
+  {
+    "name": "Infrastructure as Code: Containers",
+    "order": 8,
+    "subtopics": [
+      { "content": "Docker", "type": "recommended" },
+      { "content": "LXC", "type": "alternative" }
+    ]
+  },
+  {
+    "name": "Infrastructure as Code: Configuration Management",
+    "order": 9,
+    "subtopics": [
+      { "content": "Ansible", "type": "recommended" },
+      { "content": "Chef", "type": "alternative" },
+      { "content": "Salt", "type": "alternative" },
+      { "content": "Puppet", "type": "alternative" }
+    ]
+  },
+  {
+    "name": "Infrastructure as Code: Container Orchestration",
+    "order": 10,
+    "subtopics": [
+      { "content": "Kubernetes", "type": "recommended" },
+      { "content": "Docker Swarm", "type": "alternative" },
+      { "content": "Mesos", "type": "alternative" },
+      { "content": "Nomad", "type": "alternative" }
+    ]
+  },
+  {
+    "name": "Infrastructure as Code: Infrastructure Provision",
+    "order": 11,
+    "subtopics": [
+      { "content": "Terraform", "type": "recommended" },
+      { "content": "CloudFormation", "type": "alternative" },
+      { "content": "Pulumi", "type": "alternative" }
+    ]
+  },
+  {
+    "name": "CI/CD Tools",
+    "order": 12,
+    "subtopics": [
+      { "content": "Gitlab CI", "type": "recommended" },
+      { "content": "GitHub Actions", "type": "recommended" },
+      { "content": "Bamboo", "type": "alternative" },
+      { "content": "Azure DevOps", "type": "alternative" },
+      { "content": "Jenkins", "type": "recommended" },
+      { "content": "Travis CI", "type": "alternative" },
+      { "content": "TeamCity", "type": "alternative" },
+      { "content": "Circle CI", "type": "recommended" }
+    ]
+  },
+  {
+    "name": "Monitoring: Infrastructure",
+    "order": 13,
+    "subtopics": [
+      { "content": "Prometheus", "type": "recommended" },
+      { "content": "Nagios", "type": "alternative" },
+      { "content": "Grafana", "type": "recommended" },
+      { "content": "Zabbix", "type": "alternative" },
+      { "content": "Monit", "type": "alternative" },
+      { "content": "Datadog", "type": "alternative" }
+    ]
+  },
+  {
+    "name": "Monitoring: Applications",
+    "order": 14,
+    "subtopics": [
+      { "content": "Jaeger", "type": "recommended" },
+      { "content": "New Relic", "type": "recommended" },
+      { "content": "AppDynamics", "type": "alternative" },
+      { "content": "Instana", "type": "alternative" },
+      { "content": "OpenTracing", "type": "alternative" }
+    ]
+  },
+  {
+    "name": "Monitoring: Logs",
+    "order": 15,
+    "subtopics": [
+      { "content": "Elastic Stack", "type": "recommended" },
+      { "content": "Graylog", "type": "alternative" },
+      { "content": "Splunk", "type": "alternative" },
+      { "content": "Papertrail", "type": "alternative" }
+    ]
+  },
+  {
+    "name": "Cloud Providers",
+    "order": 16,
+    "subtopics": [
+      { "content": "AWS", "type": "recommended" },
+      { "content": "Google Cloud", "type": "alternative" },
+      { "content": "Azure", "type": "alternative" },
+      { "content": "Heroku", "type": "alternative" },
+      { "content": "Digital Ocean", "type": "recommended" },
+      { "content": "Linode", "type": "alternative" },
+      { "content": "Vultr", "type": "alternative" }
+    ]
+  },
+  {
+    "name": "Cloud Design Patterns",
+    "order": 17,
+    "subtopics": [
+      { "content": "Availability", "type": "order-independent" },
+      { "content": "Data Management", "type": "order-independent" },
+      { "content": "Design and Implementation", "type": "order-independent" },
+      { "content": "Management and monitoring", "type": "order-independent" }
+    ]
+  }
+]

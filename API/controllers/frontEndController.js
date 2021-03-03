@@ -1,5 +1,7 @@
 const { FrontEndTopic } = require('../models/topicModel');
 
+const loadDevData;
+
 module.exports.getAllTopics = async (req, res) => {
   try {
     const topics = await FrontEndTopic.find();
