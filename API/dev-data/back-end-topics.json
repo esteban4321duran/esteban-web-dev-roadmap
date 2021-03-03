@@ -1,12 +1,239 @@
 [
   {
-    "name": "Language",
+    "name": "Internet",
     "order": 0,
     "subtopics": [
-      { "content": "syntax", "type": "recommended" },
-      { "content": "java", "type": "recommended" },
-      { "content": "", "type": "recommended" },
-      { "content": "c#", "type": "recommended" }
+      { "content": "How does the internet work?", "type": "recommended" },
+      { "content": "What is HTTP?", "type": "recommended" },
+      { "content": "Browsers and how do they work?", "type": "recommended" },
+      { "content": "DNS and how it works?", "type": "recommended" },
+      { "content": "What is Domain Name?", "type": "recommended" },
+      { "content": "What is hosting?", "type": "recommended" }
+    ]
+  },
+  {
+    "name": "Basic Frontend Knowledge",
+    "order": 1,
+    "subtopics": [
+      { "content": "HTML", "type": "recommended" },
+      { "content": "CSS", "type": "recommended" },
+      { "content": "Javascript", "type": "recommended" },
+      { "content": "", "type": "recommended" }
+    ]
+  },
+  {
+    "name": "OS and General Knowledge",
+    "order": 2,
+    "subtopics": [
+      { "content": "How OSs work in general", "type": "recommended" },
+      { "content": "Process management", "type": "recommended" },
+      { "content": "Threads and concurrency", "type": "recommended" },
+      { "content": "Memory management", "type": "recommended" },
+      { "content": "Interprocess Communication", "type": "recommended" },
+      { "content": "I/O Management", "type": "recommended" },
+      {
+        "content": "POSIX Basics: stdin, stdout, stderr, pipes",
+        "type": "recommended"
+      },
+      { "content": "Basic networking concepts", "type": "recommended" }
+    ]
+  },
+  {
+    "name": "Basic Terminal commmands",
+    "order": 3,
+    "subtopics": [
+      { "content": "grep", "type": "recommended" },
+      { "content": "awk", "type": "recommended" },
+      { "content": "sed", "type": "recommended" },
+      { "content": "isof", "type": "recommended" },
+      { "content": "curl", "type": "recommended" },
+      { "content": "wget", "type": "recommended" },
+      { "content": "tall", "type": "recommended" },
+      { "content": "head", "type": "recommended" },
+      { "content": "less", "type": "recommended" },
+      { "content": "find", "type": "recommended" },
+      { "content": "ssh", "type": "recommended" },
+      { "content": "kill", "type": "recommended" }
+    ]
+  },
+  {
+    "name": "Learn a Language",
+    "order": 4,
+    "subtopics": [
+      { "content": "Javascript", "type": "recommended" },
+      { "content": "Python", "type": "alternative" },
+      { "content": "Ruby", "type": "alternative" },
+      { "content": "PHP", "type": "alternative" },
+      { "content": "C#", "type": "alternative" },
+      { "content": "Java", "type": "alternative" },
+      { "content": "Rust", "type": "alternative" },
+      { "content": "Go", "type": "alternative" }
+    ]
+  },
+  {
+    "name": "Version control systems",
+    "order": 5,
+    "subtopics": [{ "content": "Basic usage of git", "type": "recommended" }]
+  },
+  {
+    "name": "Repo hosting services",
+    "order": 6,
+    "subtopics": [{ "content": "GitHub", "type": "recommended" }]
+  },
+  {
+    "name": "Relational Databases",
+    "order": 7,
+    "subtopics": [
+      { "content": "PostgreSQL", "type": "recommended" },
+      { "content": "MySQL", "type": "alternative" },
+      { "content": "MariaDB", "type": "alternative" },
+      { "content": "MS SQL", "type": "alternative" },
+      { "content": "Oracle", "type": "alternative" }
+    ]
+  },
+  {
+    "name": "More about databases",
+    "order": 8,
+    "subtopics": [
+      { "content": "ORMs", "type": "recommended" },
+      { "content": "ACID", "type": "recommended" },
+      { "content": "Transactions", "type": "recommended" },
+      { "content": "N+1 problem", "type": "recommended" },
+      { "content": "Database normalization", "type": "recommended" },
+      { "content": "Indexes and how they work", "type": "recommended" },
+      { "content": "Data replication", "type": "order-independent" },
+      { "content": "Sharding strategies", "type": "order-independent" },
+      { "content": "CAP theorem", "type": "order-independent" }
+    ]
+  },
+  {
+    "name": "NoSQL Databases",
+    "order": 9,
+    "subtopics": [
+      { "content": "Document based", "type": "order-independent" },
+      { "content": "Columns based", "type": "order-independent" },
+      { "content": "Time series", "type": "order-independent" },
+      { "content": "Realtime", "type": "order-independent" }
+    ]
+  },
+  {
+    "name": "Learn about APIs",
+    "order": 10,
+    "subtopics": [
+      { "content": "HATEOAS", "type": "order-independent" },
+      { "content": "Open API Spec and Swagger", "type": "order-indpendent" },
+      { "content": "Authentication", "type": "recommended" },
+      { "content": "REST", "type": "recommended" },
+      { "content": "JSON APIs", "type": "recommended" },
+      { "content": "SOAP", "type": "order-independent" },
+      { "content": "gRPC", "type": "recommended" }
+    ]
+  },
+  {
+    "name": "Caching",
+    "order": 11,
+    "subtopics": [
+      { "content": "CDN", "type": "recommended" },
+      { "content": "Client side", "type": "recommended" }
+    ]
+  },
+  {
+    "name": "Server Side Caching",
+    "order": 12,
+    "subtopics": [
+      { "content": "Redis", "type": "recommended" },
+      { "content": "Memcached", "type": "alternative" }
+    ]
+  },
+  {
+    "name": "Web Security Knowledge",
+    "order": 13,
+    "subtopics": [
+      { "content": "HTTPS", "type": "recommended" },
+      { "content": "Content Security Policy", "type": "recommended" },
+      { "content": "CORS", "type": "recommended" },
+      { "content": "SSL/TLS", "type": "recommended" },
+      { "content": "OWASP Security Risks", "type": "recommended" },
+      { "content": "MD5 and why not to use it", "type": "recommended" },
+      { "content": "SHA Family", "type": "recommended" },
+      { "content": "scrypt", "type": "recommended" },
+      { "content": "bcrypt", "type": "recommended" }
+    ]
+  },
+  {
+    "name": "Testing",
+    "order": 14,
+    "subtopics": [
+      { "content": "Integration Testing", "type": "recommended" },
+      { "content": "Unit Testing", "type": "recommended" },
+      { "content": "Function Testing", "type": "recommended" }
+    ]
+  },
+  {
+    "name": "CI/CD",
+    "order": 15,
+    "subtopics": [{ "content": "", "type": "recommended" }]
+  },
+  {
+    "name": "Design and Development Principles",
+    "order": 16,
+    "subtopics": [
+      { "content": "GOF Design Patterns", "type": "order-independent" },
+      { "content": "Domain Driven Development", "type": "order-independent" },
+      { "content": "Test Driven Development", "type": "ordre-independent" },
+      { "content": "SOLID", "type": "recommended" },
+      { "content": "KISS", "type": "recommended" },
+      { "content": "YAGNI", "type": "recommended" },
+      { "content": "DRY", "type": "recommended" }
+    ]
+  },
+  {
+    "name": "Search Engines",
+    "order": 17,
+    "subtopics": [
+      { "content": "Elasticsearch", "type": "recommended" },
+      { "content": "Soir", "type": "alternative" }
+    ]
+  },
+  {
+    "name": "Message Brokers",
+    "order": 18,
+    "subtopics": [
+      { "content": "RabbitMQ", "type": "recommended" },
+      { "content": "Kafka", "type": "alternative" }
+    ]
+  },
+  {
+    "name": "Conteinerization vs Virtualization",
+    "order": 19,
+    "subtopics": [{ "content": "Docker", "type": "recommended" }]
+  },
+  {
+    "name": "GraphQL",
+    "order": 20,
+    "subtopics": [
+      { "content": "Apollo", "type": "recommended" },
+      { "content": "Relay Modern", "type": "alternative" }
+    ]
+  },
+  {
+    "name": "Graph Databases",
+    "order": 21,
+    "subtopics": [{ "content": "Nea4j", "type": "order independent" }]
+  },
+  {
+    "name": "WebSockets",
+    "order": 22,
+    "subtopics": []
+  },
+  {
+    "name": "Web Servers",
+    "order": 23,
+    "subtopics": [
+      { "content": "Nginx", "type": "recommended" },
+      { "content": "Apache", "type": "alternative" },
+      { "content": "Caddy", "type": "alternative" },
+      { "content": "MS IIS", "type": "alternative" }
     ]
   }
 ]
