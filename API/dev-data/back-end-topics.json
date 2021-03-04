@@ -17,8 +17,7 @@
     "subtopics": [
       { "content": "HTML", "type": "recommended" },
       { "content": "CSS", "type": "recommended" },
-      { "content": "Javascript", "type": "recommended" },
-      { "content": "", "type": "recommended" }
+      { "content": "Javascript", "type": "recommended" }
     ]
   },
   {

@@ -1,0 +1,39 @@
+* {
+  font-family: "PT Sans", sans-serif;
+}
+.colors {
+  color: #c3dde9;
+  color: #8ecae6;
+  color: #219ebc;
+  color: #023047;
+  color: #ffb703;
+  color: #fb8500;
+}
+.topic-container {
+  background-color: #023047;
+}
+.topic-title {
+  color: #fff;
+  font-size: 200%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.subtopic {
+  color: #023047;
+  font-size: 133%;
+  text-align: center;
+}
+.recommended {
+  background-color: #ffb703;
+}
+.alternative {
+  background-color: #219ebc;
+}
+.order-independent {
+  background-color: #c3dde9;
+}
+
+.done {
+  background-color: #fb8500;
+}

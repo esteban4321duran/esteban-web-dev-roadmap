@@ -19,7 +19,6 @@ const topicSchema = new mongoose.Schema({
   },
   subtopics: {
     type: [subtopicSchema],
-    required: [true, 'Subtopic/s must be specified'],
   },
 });
 
