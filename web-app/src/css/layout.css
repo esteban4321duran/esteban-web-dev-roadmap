@@ -30,17 +30,17 @@ main {
   width: 220px;
   padding: 10px;
   margin: 20px auto;
-  border: 2px solid #000;
-}
-.left {
-  float: left;
-  clear: right;
-}
-.right {
-  float: right;
 }
 .subtopic {
-  width: 220px;
+  float: left;
+  clear: right;
+  width: 230px;
+  height: 50px;
   margin: 10px;
   padding: 20px;
+}
+
+.spinner {
+  width: 220px;
+  margin: auto;
 }

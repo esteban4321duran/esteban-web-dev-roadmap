@@ -1,10 +1,14 @@
 * {
   font-family: "PT Sans", sans-serif;
 }
+body {
+  background-color: #02283c;
+}
 .colors {
   color: #c3dde9;
   color: #8ecae6;
   color: #219ebc;
+  color: #02283c;
   color: #023047;
   color: #ffb703;
   color: #fb8500;
@@ -13,12 +17,12 @@
   background-color: #023047;
 }
 .roadmap-selector {
-  background-color: #fb8500;
+  background-color: #ffb703;
   text-align: center;
   font-size: 150%;
 }
 .selected {
-  background-color: #ffb703;
+  background-color: #fb8500;
 }
 .topic-container {
   background-color: #023047;
@@ -28,6 +32,8 @@
   font-size: 200%;
   text-align: center;
   text-transform: capitalize;
+  /* border: 2px solid #000; */
+  background-color: #02283c;
 }
 
 .subtopic {

@@ -7,9 +7,20 @@ export default class RoadmapView extends View {
     this._parent = parent;
   }
   _generateMarkup(topics) {
+    const topicViews = topics.map((topic) => {
+      return new TopicView(topic);
+    });
     const markup = `
-		${topics.forEach((topic) => topic.generateMarkup)}
+		${topicViews
+      .map((topicView) => {
+        return topicView.generateMarkup(topicView.data);
+      })
+      .join("")}
 		`;
     return markup;
+  }
+
+  subscribeClickListener(listener) {
+    this._parent.addEventListener("click", listener);
   }
 }

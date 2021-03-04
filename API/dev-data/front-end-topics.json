@@ -55,9 +55,13 @@
       { "content": "Learn Fetch API / Ajax (XHR)", "type": "recommended" },
       { "content": "ES6+ and modular Javascript", "type": "recommended" },
       {
-        "content": "Understand the concepts Hoisting, Event Bubbling, Scope, Prototype, Shadow DOM, strict",
+        "content": "Hoisting, Scope",
         "type": "recommended"
-      }
+      },
+      { "content": "Event Bubbling", "type": "recommended" },
+      { "content": "rototype", "type": "recommended" },
+      { "content": "Shadow DOM", "type": "recommended" },
+      { "content": "strict", "type": "recommended" }
     ]
   },
   {

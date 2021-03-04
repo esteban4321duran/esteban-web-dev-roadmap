@@ -8,7 +8,9 @@ const init = function () {
     selectedId: null,
   });
 
+  //subscribe event listener
   roadmapSelector.subscribeClickListener(controlRoadmapSelectorClicks);
+  roadmapView.subscribeClickListener(controlRoadmapClicks);
 };
 
 const controlRoadmapSelectorClicks = async function (event) {
@@ -30,7 +32,15 @@ const controlRoadmapSelectorClicks = async function (event) {
 
   //fetch data from API
   const topics = await model.requestDataFromAPI();
-  console.log(topics);
+
+  //update and render to the view
+  roadmapView.updateAndRender(topics);
+};
+
+const controlRoadmapClicks = async function (event) {
+  const clickedElement = event.target;
+  if (!clickedElement.classList.contains("subtopic")) return;
+  console.log(clickedElement.dataset.subId);
 };
 
 //Starting point
