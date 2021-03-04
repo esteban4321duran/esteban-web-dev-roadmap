@@ -2,6 +2,18 @@ main {
   width: 960px;
   margin: auto;
 }
+.roadmap-selector-container {
+  display: block;
+  width: 920px;
+  margin: 20px auto;
+  padding: 20px;
+}
+.roadmap-selector {
+  display: inline-block;
+  width: 140px;
+  margin: 10px;
+  padding: 10px 0px;
+}
 .roadmap-container {
   width: 960px;
   padding: 1px;

@@ -9,6 +9,17 @@
   color: #ffb703;
   color: #fb8500;
 }
+.roadmap-selector-container {
+  background-color: #023047;
+}
+.roadmap-selector {
+  background-color: #fb8500;
+  text-align: center;
+  font-size: 150%;
+}
+.selected {
+  background-color: #ffb703;
+}
 .topic-container {
   background-color: #023047;
 }
