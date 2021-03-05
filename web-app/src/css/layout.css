@@ -2,17 +2,40 @@ main {
   width: 960px;
   margin: auto;
 }
-.roadmap-selector-container {
-  display: block;
+.nav-container {
+  display: in;
   width: 920px;
   margin: 20px auto;
   padding: 20px;
 }
-.roadmap-selector {
+.roadmap-selector-container {
   display: inline-block;
-  width: 140px;
-  margin: 10px;
+  width: 430px;
+  margin: 0px 10px;
+  overflow: auto;
+  height: 100%;
+}
+.roadmap-selector {
+  float: left;
+  width: 120px;
+  height: 40px;
+  margin: 20px 10px;
   padding: 10px 0px;
+}
+.reference-container {
+  display: inline-block;
+  width: 440px;
+
+  margin: 10px;
+  overflow: auto;
+  height: 100%;
+}
+.reference-item {
+  float: left;
+  width: 106px;
+  height: 40px;
+  margin: 10px;
+  padding: 10px;
 }
 .roadmap-container {
   width: 960px;

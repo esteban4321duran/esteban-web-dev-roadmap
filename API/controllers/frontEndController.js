@@ -39,6 +39,7 @@ module.exports.createTopic = async (req, res) => {
 };
 
 module.exports.updateTopic = async (req, res) => {
+  console.log(req.body);
   try {
     const topic = await FrontEndTopic.findByIdAndUpdate(
       req.params.id,

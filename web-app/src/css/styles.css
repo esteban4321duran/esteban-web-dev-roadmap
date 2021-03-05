@@ -13,14 +13,24 @@ body {
   color: #ffb703;
   color: #fb8500;
 }
-.roadmap-selector-container {
+.nav-container {
   background-color: #023047;
+}
+.reference-container {
+  background-color: #02283c;
+}
+.reference-item {
+  color: #023047;
+  font-size: 100%;
+  font-weight: bold;
+  text-align: center;
 }
 .roadmap-selector {
   background-color: #ffb703;
   text-align: center;
   font-size: 150%;
 }
+
 .selected {
   background-color: #fb8500;
 }
@@ -53,4 +63,8 @@ body {
 
 .done {
   background-color: #fb8500;
+}
+.topic-done {
+  background-color: #ffb703;
+  color: #000;
 }

@@ -20,7 +20,7 @@ const controlRoadmapSelectorClicks = async function (event) {
   const clickedId = Number(clickedSelector.dataset.id);
 
   //update status
-  model.status.selectedRoadmap = clickedId;
+  model.state.selectedRoadmap = clickedId;
 
   //update roadmap selector view
   roadmapSelector.updateAndRender({
@@ -40,16 +40,55 @@ const controlRoadmapSelectorClicks = async function (event) {
 const controlRoadmapClicks = async function (event) {
   const clickedElement = event.target;
   if (!clickedElement.classList.contains("subtopic")) return;
+  //update state
+  updateState(clickedElement);
+  //update UI
+  roadmapView.updateAndRender(model.state.topics);
+};
 
-  const clickedTopicOrder = Number(
-    clickedElement.closest(".topic-container").dataset.order
-  );
-  const topic = roadmapView.getTopics().find((topic) => {
-    console.log(topic.order);
-    console.log(clickedTopicOrder);
-    return topic.order === clickedTopicOrder;
+const updateState = (clickedElement) => {
+  toggleSubtopicStatus(clickedElement);
+  toggleTopicStatus(clickedElement);
+  const updatedTopic = findTopic(clickedElement);
+  model.updateTopic(updatedTopic);
+};
+
+const toggleSubtopicStatus = (clickedElement) => {
+  const subtopic = findSubtopic(clickedElement);
+  if (subtopic.status === "pending") subtopic.status = "done";
+  else subtopic.status = "pending";
+};
+const findSubtopic = (clickedElement) => {
+  const clickedElementParent = clickedElement.closest(".topic-container");
+  const topicElementTitle = clickedElementParent.querySelector(".topic-title");
+
+  const topicIndex = model.state.topics.findIndex((topic) => {
+    return topic.name === topicElementTitle.textContent;
   });
-  
+
+  const topic = model.state.topics[topicIndex];
+  return topic.subtopics.find((subtopic) => {
+    return subtopic.content === clickedElement.textContent;
+  });
+};
+const toggleTopicStatus = (clickedElement) => {
+  const topic = findTopic(clickedElement);
+  if (
+    topic.subtopics.every((subtopic) => {
+      return subtopic.status === "done";
+    })
+  ) {
+    console.log("topic done");
+    if (topic.status === "pending") topic.status = "done";
+  } else topic.status = "pending";
+};
+const findTopic = (clickedElement) => {
+  const clickedElementParent = clickedElement.closest(".topic-container");
+  const topicTitle = clickedElementParent.querySelector(".topic-title")
+    .textContent;
+  return model.state.topics.find((topic) => {
+    return topic.name === topicTitle;
+  });
 };
 
 //Starting point
