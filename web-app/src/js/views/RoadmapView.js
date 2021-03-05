@@ -23,4 +23,8 @@ export default class RoadmapView extends View {
   subscribeClickListener(listener) {
     this._parent.addEventListener("click", listener);
   }
+
+  getTopics() {
+    return this._data;
+  }
 }

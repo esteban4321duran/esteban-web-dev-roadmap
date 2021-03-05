@@ -40,7 +40,16 @@ const controlRoadmapSelectorClicks = async function (event) {
 const controlRoadmapClicks = async function (event) {
   const clickedElement = event.target;
   if (!clickedElement.classList.contains("subtopic")) return;
-  console.log(clickedElement.dataset.subId);
+
+  const clickedTopicOrder = Number(
+    clickedElement.closest(".topic-container").dataset.order
+  );
+  const topic = roadmapView.getTopics().find((topic) => {
+    console.log(topic.order);
+    console.log(clickedTopicOrder);
+    return topic.order === clickedTopicOrder;
+  });
+  
 };
 
 //Starting point
