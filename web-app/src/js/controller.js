@@ -10,7 +10,8 @@ const init = function () {
 
   //subscribe event listener
   roadmapSelector.subscribeClickListener(controlRoadmapSelectorClicks);
-  roadmapView.subscribeClickListener(controlRoadmapClicks);
+  roadmapView.subscribeClickListener(controlSubtopicClicks);
+  roadmapView.subscribeClickListener(controlTopicClicks);
 };
 
 const controlRoadmapSelectorClicks = async function (event) {
@@ -37,20 +38,16 @@ const controlRoadmapSelectorClicks = async function (event) {
   roadmapView.updateAndRender(topics);
 };
 
-const controlRoadmapClicks = async function (event) {
+const controlSubtopicClicks = async function (event) {
   const clickedElement = event.target;
   if (!clickedElement.classList.contains("subtopic")) return;
   //update state
-  updateState(clickedElement);
-  //update UI
-  roadmapView.updateAndRender(model.state.topics);
-};
-
-const updateState = (clickedElement) => {
   toggleSubtopicStatus(clickedElement);
   toggleTopicStatus(clickedElement);
   const updatedTopic = findTopic(clickedElement);
   model.updateTopic(updatedTopic);
+  //update UI
+  roadmapView.updateAndRender(model.state.topics);
 };
 
 const toggleSubtopicStatus = (clickedElement) => {
@@ -78,7 +75,6 @@ const toggleTopicStatus = (clickedElement) => {
       return subtopic.status === "done";
     })
   ) {
-    console.log("topic done");
     if (topic.status === "pending") topic.status = "done";
   } else topic.status = "pending";
 };
@@ -89,6 +85,28 @@ const findTopic = (clickedElement) => {
   return model.state.topics.find((topic) => {
     return topic.name === topicTitle;
   });
+};
+
+const controlTopicClicks = (event) => {
+  const clickedElement = event.target;
+  if (!clickedElement.classList.contains("topic-title")) return;
+  //update state
+  toggleAllSubtopicsStatus(clickedElement);
+  const updatedTopic = findTopic(clickedElement);
+  model.updateTopic(updatedTopic);
+  //update view
+  roadmapView.updateAndRender(model.state.topics);
+};
+const toggleAllSubtopicsStatus = (clickedElement) => {
+  const topic = findTopic(clickedElement);
+  console.log("ran");
+  if (topic.status === "pending") {
+    topic.status = "done";
+    topic.subtopics.forEach((subtopic) => (subtopic.status = "done"));
+  } else {
+    topic.status = "pending";
+    topic.subtopics.forEach((subtopic) => (subtopic.status = "pending"));
+  }
 };
 
 //Starting point
