@@ -2,7 +2,10 @@ const { FrontEndTopic } = require('../models/topicModel');
 
 module.exports.getAllTopics = async (req, res) => {
   try {
-    const topics = await FrontEndTopic.find();
+    const query = FrontEndTopic.find();
+    query.sort({ order: 'asc' });
+    const topics = await query;
+
     res.status(200).json({
       status: 'success',
       data: {
@@ -39,7 +42,6 @@ module.exports.createTopic = async (req, res) => {
 };
 
 module.exports.updateTopic = async (req, res) => {
-  console.log(req.body);
   try {
     const topic = await FrontEndTopic.findByIdAndUpdate(
       req.params.id,
